@@ -18,6 +18,7 @@ const MoviePage = (props) => {
         </>
       ) : (
         <p>Waiting for movie details</p>
+        // If the movie doesn't have details now, the details will be replaced by this message.
       )}
     </>
   );

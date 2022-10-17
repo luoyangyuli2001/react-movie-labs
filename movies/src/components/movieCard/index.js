@@ -49,13 +49,13 @@ export default function MovieCard(props) {
       />
       <CardContent>
         <Grid container>
-          <Grid item xs={6}>
+          <Grid item xs={8}>
             <Typography variant="h6" component="p">
               <CalendarIcon fontSize="small" />
               {movie.release_date}
             </Typography>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={4}>
             <Typography variant="h6" component="p">
               <StarRateIcon fontSize="small" />
               {"  "} {movie.vote_average}{" "}
@@ -69,7 +69,7 @@ export default function MovieCard(props) {
       </IconButton>
         <Link to={`/movies/${movie.id}`}>
           <Button variant="outlined" size="medium" color="primary">
-            More Info ...
+            More Info
           </Button>
         </Link>
       </CardActions>
