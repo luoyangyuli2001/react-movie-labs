@@ -54,7 +54,7 @@ describe("Navigation", () => {
       cy.get("button").contains("Favorites").click();
       cy.get(".MuiCardActions-root").eq(0).contains("More Info").click();
       cy.url().should("include", `/movies/${movies[0].id}`);
-      cy.get("p").contains(movies[0].overview)
+      cy.get("h3").next().contains(movies[0].overview);
     });
   });
   describe("The forward/backward links", () => {
