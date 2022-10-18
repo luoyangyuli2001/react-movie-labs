@@ -62,12 +62,12 @@ export default function FilterMoviesCard(props) {
         />
         <FormControl sx={{...formControl}}>
           <TextField
-            select = {true}
-            labelId="genre-label"
+            select
+            label="Genre"
             id="genre-select"
-            defaultValue=""
             value={props.genreFilter}
             onChange={handleGenreChange}
+            variant="filled"
           >
             {genres.map((genre) => {
               return (
