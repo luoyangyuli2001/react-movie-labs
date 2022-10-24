@@ -1,3 +1,4 @@
+
 import React from "react";
 import MovieHeader from "../components/headerMovie";
 import SampleMovie from "./sampleData";
